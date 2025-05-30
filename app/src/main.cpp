@@ -1,15 +1,8 @@
 #include "gpio.h"
+#include "examples/h3li5331dl_i2c_example.h"
 
 extern "C" void SystemClock_Config(void);
 
 int main() {
-    HAL_Init();
-    SystemClock_Config();
-
-    MX_GPIO_Init();
-
-    while (true) {
-        HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-        HAL_Delay(1000);
-    }
+    h3li5331dl_i2c_example();
 }
