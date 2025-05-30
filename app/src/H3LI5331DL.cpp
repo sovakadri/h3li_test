@@ -1,4 +1,5 @@
 #include "H3LI5331DL.h"
+#include "gpio.h"
 
 namespace SENSOR_DRIVER{
 

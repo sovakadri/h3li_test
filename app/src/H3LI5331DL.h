@@ -1,5 +1,5 @@
 #pragma once
-#include <cstdint.h>
+#include <cstdint>
 
 // range setting [g] / 2^15 (signed short max number)
 // This scales the signed 2 byte long data on the interval
